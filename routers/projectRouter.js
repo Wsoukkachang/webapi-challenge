@@ -16,11 +16,12 @@ router.get('/', async (req, res) => { // RETURNS NULL
 router.get('/:id', async (req, res) => {
     const { id } = req.params;
     try {
-    const project = await Projects.get(id);
-    if (project) {
-        res.status(200).json(project)
-    } else {
-        res.status(404).json({message: "The project with that id could not be found"})
+        const project = await Projects.get(id);
+        if (project) {
+            res.status(200).json(project)
+        } else {
+            res.status(404).json({message: "The project with that id could not be found"})
+        }
     } catch {
     res.status(500).json({error: "Error retrieving data"})
     }

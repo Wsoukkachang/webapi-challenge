@@ -12,7 +12,7 @@ server.use('/projects', projectRouter);
 
 server.get('/', (req, res) => {
 res.send(`
-    <h1>Actions and Projects API</h1>
+    <h1>Sprint Actions and Projects API</h1>
     <p>Use /actions to access Action Router</p>
     <p>Use /projects to access Project Router</p>
 `)
