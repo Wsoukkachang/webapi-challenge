@@ -26,13 +26,31 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+- (1) Node.js that makes it easier to build web apps. 
+- (2) It's compatible with connect middleware.
+
 - [ ] Describe Middleware?
+
+- Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle. The next function is a function in the Express router which, when invoked, executes the middleware succeeding the current middleware.
+
+Middleware functions can perform the following tasks:
+
+Execute any code.
+Make changes to the request and the response objects.
+End the request-response cycle.
+Call the next middleware in the stack.
 
 - [ ] Describe a Resource?
 
+- Any data that can be accessible via a unique URI.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+- A status code 200 and .json object
+
 - [ ] How can we partition our application into sub-applications?
+
+-Using Express Routers to split resources.
 
 ## Project Setup
 
